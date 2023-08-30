@@ -1,0 +1,50 @@
+body, html {
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+width: 1200px;
+margin: 0 auto;
+    
+    background-color: chocolate;
+
+}
+
+.container .header header{
+
+    background-color: brown;
+    height: 60px;
+}
+nav{
+    float: left;
+    width: 25%;
+    background: rgb(238,174,202);
+
+}
+header {
+    background-color: magenta;
+    height: 60px;
+}
+
+article {
+    width: 75%;
+
+height: 250px;
+background: rgb(63,94,251);
+
+}
+
+section {
+    background: rgb(0,215,250);
+
+overflow: hidden;
+}
+
+footer {
+    height: 80px;
+    background-color: goldenrod;
+    
+}
