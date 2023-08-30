@@ -3,48 +3,53 @@ body, html {
     padding: 0;
     margin: 0;
 }
+ .contenedor {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: green;
+ }
 
-
-.container{
-width: 1200px;
-margin: 0 auto;
-    
-    background-color: chocolate;
-
-}
-
-.container .header header{
-
-    background-color: brown;
+.header {
+    background-color: magenta;
     height: 60px;
+    grid-area: header;
 }
 nav{
     float: left;
     width: 25%;
     background: rgb(238,174,202);
-
-}
-header {
-    background-color: magenta;
-    height: 60px;
-}
-
-article {
-    width: 75%;
-
-height: 250px;
-background: rgb(63,94,251);
-
-}
-
-section {
-    background: rgb(0,215,250);
-
-overflow: hidden;
+    grid-area: menu;
 }
 
 footer {
     height: 80px;
     background-color: goldenrod;
+grid-area: footer;
+    
     
 }
+
+article {
+    width: 75%;
+grid-area: content;
+height: 250px;
+background: rgb(63,94,251);
+
+}
+
+#container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: brown;
+    display: flex;
+    grid-template-areas: 
+    'header header header header'
+    'content content content  menu'
+    'footer footer  footer  footer ';
+}
+
+
+
+
+
+
